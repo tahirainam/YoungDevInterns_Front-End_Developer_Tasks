@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <h1>Sign Up</h1>
-        <form method="post">
-            <div>
-                <label for="user_name">Name</label><br>
-                <input type="text" id="user_name" name="user_name">
-            </div>
-            <div>
-                <label for="user_email">Email</label><br>
-                <input type="email" id="user_email" name="user_email">
-            </div>
-            <div>
-                <label for="user_password">Password</label><br>
-                <input type="password" id="user_password" name="user_password" minlength="8">
-            </div>
-            <div>
-                <label for="user_confirm_password">Confirm Password</label><br>
-                <input type="password" id="user_confirm_password" name="user_confirm_password" minlength="8">
-            </div>
-            <div>
-                <button>Sign Up</button>
-            </div>
-        </form>
+      <h1>Sign Up</h1>
+      <form method="post">
+        <div>
+          <label for="user_name">Name</label><br />
+          <input type="text" id="user_name" name="user_name" />
+        </div>
+        <div>
+          <label for="user_email">Email</label><br />
+          <input type="email" id="user_email" name="user_email" />
+        </div>
+        <div>
+          <label for="user_password">Password</label><br />
+          <input
+            type="password"
+            id="user_password"
+            name="user_password"
+            minlength="8"
+          />
+        </div>
+        <div>
+          <label for="user_confirm_password">Confirm Password</label><br />
+          <input
+            type="password"
+            id="user_confirm_password"
+            name="user_confirm_password"
+            minlength="8"
+          />
+        </div>
+        <div>
+            <select name="user_role" id="user_role">
+              <option value="admin">Admin</option>
+              <option value="guest">Guest</option>
+            </select>
+          </div>
+        <div>
+          <label>
+            <input type="checkbox" id="agree" name="agree" required />
+            I agree to the privacy policy
+          </label>
+        </div>
+        <div>
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
     </main>
-</body>
+  </body>
 </html>
