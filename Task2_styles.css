@@ -61,6 +61,14 @@ button:hover {
   color: rgb(128, 84, 43);
   box-shadow: none;
 }
+.input-error {
+  border: 2px solid rgb(189, 47, 47);
+}
+.error-message {
+  color: rgb(189, 47, 47);
+  font-size: 12px;
+  margin-top: 5px;
+}
 label {
   padding: 2px;
 }
